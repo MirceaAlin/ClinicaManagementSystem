@@ -1,14 +1,13 @@
 package com.clinica.management;
 
-import org.junit.Test;
-import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.junit.jupiter.api.Test;
 
-@com.clinica.management.SpringBootTest
-public class ClinicaManagementSystemApplicationTests {
+@SpringBootTest
+class ClinicaManagementSystemApplicationTests {
 
 	@Test
 	void contextLoads() {
-	}
 
+	}
 }
