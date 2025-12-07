@@ -1,0 +1,87 @@
+NOTIȚE MAPLE - REZUMAT COMENZI
+============================================================
+
+1. MANIPULARE EXPRESII ȘI STRUCTURI DE DATE (Imaginea 1)
+------------------------------------------------------------
+- dismantle()      = Afișează graful unei expresii (structura internă)
+- subs()           = Substituție
+- normal()         = Restrânge o expresie (aduce la numitor comun, simplifică)
+- subsop()         = Substituim un operand al unei expresii
+- expand()         = Desfacerea parantezelor
+- evalb(%)         = Verifică egalitatea dintre 2 expresii (true/false)
+- collect(p, x)    = Colectează termenii după x (factor comun pe x)
+- testeq(a=b)      = Testare egalitate
+- seq(x[i], i=1..10) = Secvență: x1, x2, ..., x10
+- Mulțimi { }      = Au operațiile: union, intersect, minus
+- Listă [ ]        = Structură ordonată
+- Tally            = (din pachetul Statistics) Nr. de apariții ale unui element în listă
+- with(ListTools)  = Pachet pentru manipularea listelor
+- map              = Lucrează pe liste (aplică o funcție fiecărui element)
+- simplify         = Simplifică expresia
+- combine          = Combină termeni (ex: puteri, exponențiale)
+- sort             = Sortarea polinomului
+- convert          = Convertește între tipuri
+
+2. POLINOAME, NUMERE COMPLEXE, CODEGEN (Imaginea 2)
+------------------------------------------------------------
+- Irreduc(p) mod 7 = Verifică dacă polinomul e ireductibil peste Z7
+- I                = Unitatea imaginară în numere complexe
+- complex(a,b)     = a + b*I
+- rand()           = Generează un număr random
+- coeff(p, x, m)   = Extrage coeficientul lui x^m din polinomul p
+- convert(x, float)= Convertește expresia în număr real (float)
+- parse()          = Inversul lui convert (din string în expresie)
+- sum(x^i, i=1..10)= Sumă
+- map(f, a+b)      = f(a) + f(b) (se aplică f tuturor membrilor)
+- with(codegen) -> cost = Numără numărul de operații dintr-o expresie
+- degree           = Gradul polinomului
+- lcoeff           = Returnează coeficientul conducător (leading coeff)
+- factor()         = Factor comun / descompunere
+- numer(f)         = Numărător
+- denom(f)         = Numitor
+
+3. TEORIA NUMERELOR ȘI ALTELE (Imaginea 3)
+------------------------------------------------------------
+- convert(exp, confrac) = Fracție continuă (sau with(NumberTheory))
+- Factor(p) mod 7  = Factorizarea polinomului p în Z7
+- powerset(5)      = Mulțimea submulțimilor (uzual powerset({1..5}))
+- stats[random, uniform[0,1]](20) = 20 de numere random uniforme pe [0,1]
+- with(numtheory) -> divisors() = Divizorii unui număr
+- rationalize      = Raționalizare (elimină radicali de la numitor)
+- nops(x)          = Numărul de elemente (operanzi) dintr-o expresie/listă
+- x || y (sau cat) = Concatenare
+- `` (backticks)   = Pentru text sau nume simbolice
+- evalm            = Evaluare matrice
+- whattype         = Tipul expresiei
+- op               = Extrage termenii (operanzii) unei expresii/liste
+
+4. ANALIZĂ MATEMATICĂ (Imaginea 4)
+------------------------------------------------------------
+- plot(x^2, x=-1..5) = Grafice
+- plot([f1, f2])     = Mai multe funcții pe același grafic
+- Diff               = Derivata inertă (doar afișează, memorează definiția)
+- diff               = Execută derivata (calculează)
+- Int / int          = Integrală inertă vs. calculată
+- is()               = Răspunde la întrebări logice (ex: x > 0?)
+- taylor(f, x=a, 10) = Seria Taylor
+- series(exp, x=0)   = Serie de puteri (când nu există Taylor)
+- with(powerseries)  = Pachet serii de puteri
+
+5. COMENZI DE BAZĂ ȘI ARITMETICĂ (Imaginea 5)
+------------------------------------------------------------
+- %                = Rezultatul pasului anterior
+- %%               = Rezultatul de acum 2 pași
+- restart          = Recomandat la începutul fiecărui exercițiu
+- evalf            = Evaluează expresia numeric (cu zecimale)
+- ? (ex: ?plot)    = Deschide Help-ul pentru funcția respectivă
+- with             = Încarcă un pachet
+- unwith           = Descarcă pachetul
+- orthopoly (T)    = Polinoame ortogonale (T = Cebîșev)
+- alias            = Prescurtare / Redenumire
+- :=               = Atribuire
+- nextprime(m)     = Următorul număr prim după m
+- ifactor(m)       = Descompunere în factori primi
+- isqrt(m)         = Rădăcina pătrată întreagă
+- igcd             = Cel mai mare divizor comun (integer GCD)
+- digits           = Setează precizia (nr. zecimale)
+- lhs / rhs        = Partea stângă (Left Hand Side) / Partea dreaptă
